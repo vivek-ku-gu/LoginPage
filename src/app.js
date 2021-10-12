@@ -54,7 +54,7 @@ app.post("/index",async(req ,res)=>{
  if(ismatch){
      res.status(200).render("home");
  }
- else{ res.status(400).send("password is incorrect");}
+ else{ res.status(400).send(`<div><h1 style="color:red ; text-align:center;">password is incorrect</h1></div>`);}
     }
     catch(error){
    res.status(400).send(error);
